@@ -2,57 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shashank Shetye | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shashank Shetye | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
-    <div class="hero-header">
-        <div class="wrapper">
+  <div class="hero-header">
+    <div class="wrapper">
 
-            <!-- Header -->
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-s"></i>
-                    <div class="logo-text">Shashank Shetye</div>
-                </div>
-
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="#" data-page="home" class="active">Home</a></li>
-                        <li><a href="#" data-page="education">Education</a></li>
-                        <li><a href="#" data-page="projects">Projects</a></li>
-                        <li><a href="#" data-page="contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <!-- Main content -->
-            <div id="content"></div>
-
+      <!-- Header -->
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-s"></i>
+          <div class="logo-text">Shashank Shetye</div>
         </div>
+
+        <nav>
+          <div class="togglebtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navlinks">
+            <li><a href="#" data-page="home" class="active">Home</a></li>
+            <li><a href="#" data-page="education">Education</a></li>
+            <li><a href="#" data-page="projects">Projects</a></li>
+            <li><a href="#" data-page="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main content -->
+      <div id="content"></div>
+
     </div>
+  </div>
 
-    <!-- Typed.js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!-- EmailJS -->
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- EmailJS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-    <script>
-        // -----------------------------
-        // SPA content as HTML strings
-        // -----------------------------
-        const pages = {
-            home: `
+  <script>
+    // -----------------------------
+    // SPA content as HTML strings
+    // -----------------------------
+    const pages = {
+      home: `
       <div class="container">
         <div class="hero-pic">
           <img src="main_photo.jpeg" alt="profile pic">
@@ -76,7 +76,7 @@
         </div>
       </div>`,
 
-            education: `
+      education: `
       <section class="education">
         <h1>Education</h1>
         <p class="section-subtitle">My academic background</p>
@@ -100,12 +100,7 @@
         <h1>Certificates</h1>
         <p class="section-subtitle">Professional certifications</p>
         <div class="certificate-grid">
-          <a href="https://www.hackerrank.com/certificates/d0a1a2c2bc53" target="_blank" class="cert-card">
-            <i class="fa-solid fa-certificate"></i>
-            <h4>Problem Solver</h4>
-            <p>HackerRank</p>
-            <span>View Certificate</span>
-          </a>
+          
           <a href="https://www.linkedin.com/learning/certificates/fe293defba0e6ca8f392c0bce8a7bb4da41154574903b4323fcb9b568208fc54?trk=share_certificate"
             target="_blank" class="cert-card">
             <i class="fa-solid fa-certificate"></i>
@@ -113,10 +108,32 @@
             <p>LinkedIn</p>
             <span>View Certificate</span>
           </a>
+
+          <a href="https://www.hackerrank.com/certificates/d0a1a2c2bc53" target="_blank" class="cert-card">
+            <i class="fa-solid fa-certificate"></i>
+            <h4>Problem Solver</h4>
+            <p>HackerRank</p>
+            <span>View Certificate</span>
+          </a>
+          <a href="https://www.hackerrank.com/certificates/ee639f49c7b5"
+            target="_blank" class="cert-card">
+            <i class="fa-solid fa-certificate"></i>
+            <h4>Software Engineer</h4>
+            <p>HackerRank</p>
+            <span>View Certificate</span>
+          </a>
+          
+          <a href="https://www.hackerrank.com/certificates/20244fa56390"
+            target="_blank" class="cert-card">
+            <i class="fa-solid fa-certificate"></i>
+            <h4>C# Certificate</h4>
+            <p>HackerRank</p>
+            <span>View Certificate</span>
+          </a>
         </div>
       </section>`,
 
-            projects: `
+      projects: `
       <section class="projects py-5">
         <div class="wrapper">
           <div class="text-center mb-5">
@@ -172,7 +189,7 @@
         </div>
       </section>`,
 
-            contact: `
+      contact: `
       <section class="contact">
         <h1>Contact Me</h1>
         <div class="contact-wrapper">
@@ -199,93 +216,93 @@
           </div>
         </div>
       </section>`
-        };
+    };
 
-        const contentDiv = document.getElementById('content');
-        const navLinks = document.querySelectorAll('.navlinks li a');
+    const contentDiv = document.getElementById('content');
+    const navLinks = document.querySelectorAll('.navlinks li a');
 
-        // Function to load page
-        function loadPage(page) {
-            contentDiv.innerHTML = pages[page];
+    // Function to load page
+    function loadPage(page) {
+      contentDiv.innerHTML = pages[page];
 
-            // Activate nav link
-            navLinks.forEach(link => link.classList.remove('active'));
-            document.querySelector(`.navlinks li a[data-page="${page}"]`).classList.add('active');
+      // Activate nav link
+      navLinks.forEach(link => link.classList.remove('active'));
+      document.querySelector(`.navlinks li a[data-page="${page}"]`).classList.add('active');
 
-            // Initialize Typed.js if home
-            if (page === 'home') {
-                new Typed(".input", {
-                    strings: ["Full-Stack Developer", "Software Engineer", "Backend Developer", "Azure Developer"],
-                    typeSpeed: 70,
-                    backSpeed: 55,
-                    loop: true
-                });
+      // Initialize Typed.js if home
+      if (page === 'home') {
+        new Typed(".input", {
+          strings: ["Full-Stack Developer", "Software Engineer", "Backend Developer", "Azure Developer"],
+          typeSpeed: 70,
+          backSpeed: 55,
+          loop: true
+        });
 
-                // Attach click listener to contact button in btn-group
-                const homeBtn = document.querySelector('.btn-group .btn[data-page="contact"]');
-                if (homeBtn) {
-                    homeBtn.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        loadPage('contact');
-                    });
-                }
-            }
-
-            // Initialize contact form
-            if (page === 'contact') {
-                emailjs.init("BteWGsxjHpQNqAbwh"); // Replace with your EmailJS public key
-                const form = document.getElementById('contact-form');
-                form.addEventListener('submit', function (event) {
-                    event.preventDefault();
-                    emailjs.sendForm('service_jpxecz8', 'template_khwrna8', this)
-                        .then(() => {
-                            alert('Message sent successfully!');
-                            form.reset();
-                        }, (error) => {
-                            alert('Oops... something went wrong.');
-                            console.log(error);
-                        });
-                });
-            }
+        // Attach click listener to contact button in btn-group
+        const homeBtn = document.querySelector('.btn-group .btn[data-page="contact"]');
+        if (homeBtn) {
+          homeBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            loadPage('contact');
+          });
         }
+      }
 
-        // Navbar click
-        navLinks.forEach(link => {
-            link.addEventListener('click', e => {
-                e.preventDefault();
-                const page = e.target.dataset.page;
-                loadPage(page);
+      // Initialize contact form
+      if (page === 'contact') {
+        emailjs.init("BteWGsxjHpQNqAbwh"); // Replace with your EmailJS public key
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          emailjs.sendForm('service_jpxecz8', 'template_khwrna8', this)
+            .then(() => {
+              alert('Message sent successfully!');
+              form.reset();
+            }, (error) => {
+              alert('Oops... something went wrong.');
+              console.log(error);
             });
         });
+      }
+    }
 
-        const pageButtons = document.querySelectorAll('[data-page]');
+    // Navbar click
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const page = e.target.dataset.page;
+        loadPage(page);
+      });
+    });
 
-        pageButtons.forEach(btn => {
-            btn.addEventListener('click', e => {
-                debugger;
-                e.preventDefault();
-                debugger;
-                const page = btn.dataset.page;
-                loadPage(page);
+    const pageButtons = document.querySelectorAll('[data-page]');
 
-                // Close mobile nav if open
-                nav.classList.remove('open');
-                togglebtn.classList.remove('click');
-            });
-        });
+    pageButtons.forEach(btn => {
+      btn.addEventListener('click', e => {
+        debugger;
+        e.preventDefault();
+        debugger;
+        const page = btn.dataset.page;
+        loadPage(page);
+
+        // Close mobile nav if open
+        nav.classList.remove('open');
+        togglebtn.classList.remove('click');
+      });
+    });
 
 
-        // Load initial page
-        loadPage('home');
+    // Load initial page
+    loadPage('home');
 
-        // Toggle nav
-        const togglebtn = document.querySelector(".togglebtn");
-        const nav = document.querySelector(".navlinks");
-        togglebtn.addEventListener("click", () => {
-            togglebtn.classList.toggle("click");
-            nav.classList.toggle("open");
-        });
-    </script>
+    // Toggle nav
+    const togglebtn = document.querySelector(".togglebtn");
+    const nav = document.querySelector(".navlinks");
+    togglebtn.addEventListener("click", () => {
+      togglebtn.classList.toggle("click");
+      nav.classList.toggle("open");
+    });
+  </script>
 </body>
 
 </html>
